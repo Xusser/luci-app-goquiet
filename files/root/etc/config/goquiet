@@ -1,0 +1,9 @@
+config goquiet
+	option enable '0'
+	option remoteIP '1.2.3.4'
+	option remotePort '443'
+	option localPort '8123'
+	option ServerName 'www.bing.com'
+	option Key 'YourKey'
+	option TicketTimeHint '300'
+	option Browser 'chrome'
