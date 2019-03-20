@@ -46,7 +46,7 @@ start_service() {
 		local localPort=$(uci_get_by_type goquiet localPort)
 
 		procd_open_instance
-		procd_set_param command /usr/bin/gq-client
+		procd_set_param command gq-client
 		procd_append_param command -s $remoteIP
 		procd_append_param command -p $remotePort
 		procd_append_param command -l $localPort
